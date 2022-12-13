@@ -1,2 +1,1 @@
-# cs320_Room_Booking_System
-cs 320 group project 
+RBS (Room Booking System) is a desktop application that you can reserve, create, remove, list and leave rooms. System will only be applied in the library for a test drive and if it is successfully managed it will be carried to engineering, business, scola and architecture faculties as well. In the system there exists admins and users where admins can create and remove rooms and users can reserve, list, leave and see the history of bookings of them.
