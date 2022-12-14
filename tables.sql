@@ -16,11 +16,11 @@ create table admin (
 
 create table room (
 	id					int				not null auto_increment unique,
-    room_name			varchar(30) 	,
-    building_id			int				,
-    capacity 			int 			,
-	property_string		varchar(30) 	, 
-    reservation_status	varchar(30) 	,
+    room_name			varchar(30) 	not null,
+    building_id			int				not null,
+    capacity 			int 			not null,
+	property_string		varchar(30) 	not null, 
+    reservation_status	varchar(30) 	not null,
     primary key(room_name, building_id ),
     foreign key (building_id) references building(id)
 );
