@@ -14,4 +14,13 @@ create table admin (
     primary key(id)
 );
 
-
+create table room (
+	id					int				not null auto_increment unique,
+    room_name			varchar(30) 	,
+    building_id			int				,
+    capacity 			int 			,
+	property_string		varchar(30) 	, 
+    reservation_status	varchar(30) 	,
+    primary key(room_name, building_id ),
+    foreign key (building_id) references building(id)
+);
