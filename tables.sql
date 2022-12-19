@@ -33,6 +33,5 @@ create table user (
     user_name		    varchar(30)	    not null,
     user_email 	        varchar(30) 	not null,
     city_state			varchar(30) 	not null,
--- 	user_password		varchar(30)	    not null,
     primary key(id)
 );
