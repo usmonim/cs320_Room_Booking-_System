@@ -1,5 +1,10 @@
  -- MAIN
  -- BUILDINGS 
+ insert into building (id, building_name) values (1, 'Engineering');
+ insert into building (id, building_name) values (2, 'Main Building');
+ insert into building (id, building_name) values (3, 'Library');
+ insert into building (id, building_name) values (4, 'Business');
+ insert into building (id, building_name) values (5, 'Architecture');
 
  
 -- USERS
