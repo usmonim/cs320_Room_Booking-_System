@@ -35,3 +35,12 @@ create table user (
     city_state			varchar(30) 	not null,
     primary key(id)
 );
+
+create table reserves (
+    reservation_id      int 			not null auto_increment,
+    user_id		        int 			not null,
+    room_id				int		    	not null,
+    primary key(reservation_id),
+    foreign key (user_id) references user (id),
+    foreign key (room_id) references room (id)
+);
