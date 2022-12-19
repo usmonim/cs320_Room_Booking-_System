@@ -1,5 +1,8 @@
-Drop table if exists building;
+Drop table if exists reserves;
+Drop table if exists room;
+Drop table if exists user;
 Drop table if exists admin;
+Drop table if exists building;
 
 create table building (
 	id					int				not null,
@@ -23,4 +26,13 @@ create table room (
     reservation_status	varchar(30) 	not null,
     primary key(room_name, building_id ),
     foreign key (building_id) references building(id)
+);
+
+create table user (
+	id					int				not null,
+    user_name		    varchar(30)	    not null,
+    user_email 	        varchar(30) 	not null,
+    city_state			varchar(30) 	not null,
+-- 	user_password		varchar(30)	    not null,
+    primary key(id)
 );
