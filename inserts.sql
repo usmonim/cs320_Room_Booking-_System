@@ -8,10 +8,10 @@
 
  
 -- USERS
-
-
-
-
+ insert into user (id, user_name, user_email, city_state) values (1, 'Muhammed Lee', 'muhammed@lee.com', 'Istanbul/Turkey');
+ insert into user (id, user_name, user_email, city_state) values (2, 'Chris Kon', 'chriscon@fakemail.com', 'New York/USA');
+ insert into user (id, user_name, user_email, city_state) values (3, 'Mace Windu', 'macewindu@jedi.com', 'Coruscant/Jedi');
+ 
 
 
 
@@ -41,6 +41,6 @@
 
 -- select room.id, room_name, building_id, capacity from room where reservation_status = 'Occupied';
 -- select reservation_status from room;
---  select room.id, room_name, capacity, reservation_status from room where reservation_status = 'Occupied'
+-- select room.id, room_name, capacity, reservation_status from room where reservation_status = 'Occupied'
 -- select room_id, room_name, instructor_name from room, reserves, instructor where room.id = reserves.room_id and reserves.instructor_id = instructor.id;
 -- select room_id, room_name, instructor_name from room, reserves, instructor where room.id = reserves.room_id and reserves.instructor_id = instructor.id and reserves.instructor_id = 2;
