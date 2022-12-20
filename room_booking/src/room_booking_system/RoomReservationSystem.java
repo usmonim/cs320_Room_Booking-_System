@@ -81,6 +81,13 @@ public class RoomBookingSystem {
 				room.getoccupied();
 			}
 			
+			//Menu Option 3 
+			if (choose == 3) {
+				System.out.println(''3.Search For a Room");
+						   
+			
+			}
+			
 		}
 
 
