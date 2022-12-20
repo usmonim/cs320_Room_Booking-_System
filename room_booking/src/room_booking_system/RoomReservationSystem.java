@@ -85,7 +85,7 @@ public class RoomBookingSystem {
 			if (choose == 3) {
 				System.out.println(''3.Search For a Room");
 						   
-			
+				String template = "";
 			}
 			
 		}
