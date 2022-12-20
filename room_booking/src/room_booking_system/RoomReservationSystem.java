@@ -86,6 +86,8 @@ public class RoomBookingSystem {
 				System.out.println(''3.Search For a Room");
 						   
 				String template = "";
+				System.out.println("Enter a template>: ");
+				template = input.next();
 			}
 			
 		}
