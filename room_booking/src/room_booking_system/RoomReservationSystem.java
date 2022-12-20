@@ -88,6 +88,11 @@ public class RoomBookingSystem {
 				String template = "";
 				System.out.println("Enter a template>: ");
 				template = input.next();
+						   
+				RoomActions room = new RoomActions();
+				room.connections(conn, stmt);
+				room.search(template);
+				
 			}
 			
 		}
