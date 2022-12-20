@@ -67,14 +67,15 @@ public class RoomBookingSystem {
 				System.out.println("Building ID >: ");
 				building_id = input.nextInt();
 
+				BuildingActions listrooms = new BuildingActions(building_id);
+				listrooms.connections(conn, stmt);
+				listrooms.listRooms();
 
 			}
-		} catch (Exception e) {
-			e.printStackTrace();
 		}
 
 
 	}
-}
+
 
 
