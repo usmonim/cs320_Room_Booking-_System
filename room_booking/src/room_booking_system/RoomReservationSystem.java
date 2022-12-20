@@ -33,4 +33,16 @@ public class RoomBookingSystem {
 	public static String zero = "    0 - Show Menu";
 	public static Scanner input = new Scanner(System.in);
 	public static int choose;
+
+	public static void userMenu() {
+		System.out.println(menu);
+		System.out.println("1. " + three); //list
+		System.out.println("2. " + four);  //get occupied
+		System.out.println("3. " + five);  //search room
+		System.out.println("4. " + eight);  // reserve room
+		System.out.println("5. " + nine);   // leave room
+		System.out.println(zero);   // menu show
+
+	}
 }
+
