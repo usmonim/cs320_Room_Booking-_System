@@ -7,18 +7,19 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class RoomBookingSystem {
-	
- // 1 is User 0 is Admin 
+
+	// 1 is User 0 is Admin
 	static int userType;
-	public RoomBookingSystem (int userType) {
+
+	public RoomBookingSystem(int userType) {
 		RoomBookingSystem.userType = userType;
 	}
-	
-	
+
+
 	static final String DB_URL = "jdbc:mysql://localhost/room reservation";
 	static final String USER = "root";
 	static final String PASS = "u311200t";
-//Menu options Strings 	
+	//Menu options Strings
 	public static String menu = "Menu:";
 	public static String one = "    Create Room";
 	public static String two = "    Remove Room";
@@ -44,11 +45,12 @@ public class RoomBookingSystem {
 		System.out.println(zero);   // menu show
 
 	}
+
 	public static void userSelect() throws Exception {
 		Connection conn = null;
 		Statement stmt = null;
-		conn = DriverManager.getConnection(DB_URL,USER,PASS);
-		stmt  = conn.createStatement();
+		conn = DriverManager.getConnection(DB_URL, USER, PASS);
+		stmt = conn.createStatement();
 		int room_id;
 		String room_name = "";
 		int building_id;
@@ -59,6 +61,20 @@ public class RoomBookingSystem {
 		choose = input.nextInt();
 		try {
 
+			// Menu Option 1
+			if (choose == 1) {
+				System.out.println("1. List all Rooms in a Building With Their Vacancy Information");
+				System.out.println("Building ID >: ");
+				building_id = input.nextInt();
 
+
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+
+	}
 }
+
 
