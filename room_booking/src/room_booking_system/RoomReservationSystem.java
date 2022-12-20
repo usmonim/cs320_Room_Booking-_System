@@ -77,6 +77,8 @@ public class RoomBookingSystem {
 				System.out.println("2. Get Currently Occupied Rooms");
 				
 				RoomActions room = new RoomActions();
+				room.connections(conn, stmt);
+				room.getoccupied();
 			}
 			
 		}
