@@ -44,5 +44,21 @@ public class RoomBookingSystem {
 		System.out.println(zero);   // menu show
 
 	}
+	public static void userSelect() throws Exception {
+		Connection conn = null;
+		Statement stmt = null;
+		conn = DriverManager.getConnection(DB_URL,USER,PASS);
+		stmt  = conn.createStatement();
+		int room_id;
+		String room_name = "";
+		int building_id;
+		int capacity;
+		String property_string = "";
+		int user_id;
+		System.out.println("select >: ");
+		choose = input.nextInt();
+		try {
+
+
 }
 
