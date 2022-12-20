@@ -75,6 +75,8 @@ public class RoomBookingSystem {
 			//Menu Option 2
 			if (choose == 2) {
 				System.out.println("2. Get Currently Occupied Rooms");
+				
+				RoomActions room = new RoomActions();
 			}
 			
 		}
