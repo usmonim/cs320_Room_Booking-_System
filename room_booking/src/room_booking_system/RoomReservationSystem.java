@@ -94,6 +94,19 @@ public class RoomBookingSystem {
 				room.search(template);
 				
 			}
+			// Menu Option 4
+			else if(choose == 4) {
+				System.out.println("4. Reserve a Room");
+				System.out.println("Enter room ID>: ");
+				room_id = input.nextInt();
+				System.out.println("Enter user ID>: ");
+				user_id = input.nextInt();
+				
+				ReservationActions roomreserv = new ReservationActions(room_id, user_id);
+				roomreserv.connections(conn, stmt);
+				roomreserv.roomreserv();
+				
+			}
 			
 		}
 
