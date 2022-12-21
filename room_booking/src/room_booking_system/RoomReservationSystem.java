@@ -129,6 +129,15 @@ public class RoomBookingSystem {
 				userMenu();
 				userSelect();
 			}
+						   
+			// If user enters number >9 or <0
+			else {
+				System.out.println("Please choose Menu option from 0 to 5");
+				userSelect();
+			}
+			
+			userSelect(); //Looping menu so that after we successfully done something it continues working and we can choose other option
+			
 			
 		}
 
