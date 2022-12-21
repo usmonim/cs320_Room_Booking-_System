@@ -140,7 +140,11 @@ public class RoomBookingSystem {
 			
 			
 		}
-
+                ///HANDLING EXCEPTIONS. 		
+		catch(java.sql.SQLIntegrityConstraintViolationException ex) { //EXCEPTION if we try to create 2 identical rooms in one building. 
+			System.out.println("There can not 2 rooms with same name in one Building");
+			userSelect();
+		}
 
 	}
 
