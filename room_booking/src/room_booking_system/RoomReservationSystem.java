@@ -107,6 +107,17 @@ public class RoomBookingSystem {
 				roomreserv.roomreserv();
 				
 			}
+			// Menu Option 5
+			else if(choose == 5) {
+				System.out.println("5. Leave a Room");
+				System.out.println("Enter room ID>: ");
+				room_id = input.nextInt();
+				
+				ReservationActions leaving = new ReservationActions(room_id);
+				leaving.connections(conn, stmt);
+				leaving.leaveroom();
+				
+			}
 			
 		}
 
