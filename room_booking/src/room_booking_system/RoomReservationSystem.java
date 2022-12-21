@@ -60,6 +60,11 @@ public class RoomBookingSystem {
 		System.out.println("select >: ");
 		choose = input.nextInt();
 		try {
+			// Menu Option 0 Shows menu again  
+			else if(choose == 0) {
+				userMenu();
+				userSelect();
+			}
 
 			// Menu Option 1
 			if (choose == 1) {
