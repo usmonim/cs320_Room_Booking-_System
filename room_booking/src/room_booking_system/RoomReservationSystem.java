@@ -123,6 +123,12 @@ public class RoomBookingSystem {
 				leaving.leaveroom();
 				
 			}
+						   
+                        // Menu Option 0 Shows menu again  
+			else if(choose == 0) {
+				userMenu();
+				userSelect();
+			}
 			
 		}
 
