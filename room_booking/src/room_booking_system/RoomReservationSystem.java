@@ -223,6 +223,11 @@ public class RoomBookingSystem {
 				room_id = input.nextInt();
 
 
+				RoomActions delRoom = new RoomActions(room_id);
+				delRoom.connections(conn, stmt);
+				delRoom.deletion();
+
+
 		}
 
 
