@@ -55,5 +55,17 @@ public class RoomActions {
 		System.out.println("Room " + room_name + " has been created succesfully.");
 		
 	}
+	public void deletion() throws Exception {
+		
+		String get_reserveIfexist = "select* from reserves where room_id = " + room_id + ";";
+		ResultSet rs =  stmt.executeQuery(get_reserveIfexist);
+		if(!rs.isBeforeFirst()) {
+                //System.out.println("reserve do not exist");
+			PreparedStatement preparedStatement = conn.prepareStatement("delete from room where id = ?");
+			preparedStatement.setInt(1, room_id);
+			preparedStatement.executeUpdate();
+			System.out.println("Room has been removed.");
+		}
+	}
 	
   }
