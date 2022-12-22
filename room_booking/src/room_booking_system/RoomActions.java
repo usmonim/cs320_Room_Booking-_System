@@ -43,5 +43,15 @@ public class RoomActions {
 //		this.stmt = stmt;
 		// TODO Auto-generated constructor stub
 	}
+	public void creation() throws Exception {
+		
+		PreparedStatement preparedStatement = conn.prepareStatement("insert into room (room_name, building_id, capacity, property_string) values(?, ?, ?, ?)");
+		preparedStatement.setString(1, room_name);
+		preparedStatement.setInt(2, building_id);
+		preparedStatement.setInt(3, capacity);
+		preparedStatement.setString(4, property_string);preparedStatement.executeUpdate();
+		System.out.println("Room " + room_name + " has been created succesfully.");
+		
+	}
 	
   }
