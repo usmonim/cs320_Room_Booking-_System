@@ -234,6 +234,10 @@ public class RoomBookingSystem {
 				System.out.println("3. Get Reservation History of a Room");
 				System.out.println("Enter room ID>: ");
 				room_id = input.nextInt();
+					ReservationActions roomhist = new ReservationActions(room_id);
+				roomhist.connections(conn, stmt);
+				roomhist.rommhist();
+			}
 
 
 	}catch (Exception e) { // Handle exception will be add.
