@@ -24,7 +24,9 @@ public class RoomActions {
 		this.stmt = stmt;
 	}
 	
-	
+	public RoomActions() {
+	//Empty Constructor 
+		}
 	
 	//Creation Constructor 
 	public RoomActions(String room_name, int building_id, int capacity, String property_string) {
