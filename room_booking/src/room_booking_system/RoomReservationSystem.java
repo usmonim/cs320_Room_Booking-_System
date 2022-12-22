@@ -229,6 +229,11 @@ public class RoomBookingSystem {
 
 
 		}
+		// Menu Option 3
+		else if(choose == 3) {
+				System.out.println("3. Get Reservation History of a Room");
+				System.out.println("Enter room ID>: ");
+				room_id = input.nextInt();
 
 
 	}catch (Exception e) { // Handle exception will be add.
