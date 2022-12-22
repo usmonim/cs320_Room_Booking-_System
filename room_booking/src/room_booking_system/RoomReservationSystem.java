@@ -1,8 +1,6 @@
 package assignment1RoomReservation;
 
 import java.sql.*;
-package room_booking_system;
-
 import java.sql.*;
 import java.util.Scanner;
 
@@ -218,14 +216,20 @@ public class RoomBookingSystem {
 				newRoom.connections(conn, stmt);
 				newRoom.creation();
 			}
+			// Menu Option 2
+			else if (choose == 2) {
+				System.out.println("2. Remove Room");
+				System.out.println("Enter room ID>: ");
+				room_id = input.nextInt();
 
 
-		} catch (Exception e) { // Handle exception will be add.
-			e.printStackTrace();
 		}
 
 
-	}
+	}catch (Exception e) { // Handle exception will be add.
+			e.printStackTrace();
+		}
+}
 }
 
 
