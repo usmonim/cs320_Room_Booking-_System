@@ -66,6 +66,18 @@ public class RoomActions {
 			preparedStatement.executeUpdate();
 			System.out.println("Room has been removed.");
 		}
+		else {
+//			System.out.println("reserve exist");
+			PreparedStatement preparedStatement = conn.prepareStatement("delete from reserves where room_id = ?;");
+			preparedStatement.setInt(1, room_id);
+			preparedStatement.executeUpdate();
+			
+			PreparedStatement preparedStatement2 = conn.prepareStatement("delete from room where id = ?");
+			preparedStatement2.setInt(1, room_id);
+			preparedStatement2.executeUpdate();
+			System.out.println("Room has been removed.");
+			
+		}
 	}
 	
   }
