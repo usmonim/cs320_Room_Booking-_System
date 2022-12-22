@@ -45,11 +45,13 @@ public class RoomActions {
 	}
 	public void creation() throws Exception {
 		
-		PreparedStatement preparedStatement = conn.prepareStatement("insert into room (room_name, building_id, capacity, property_string) values(?, ?, ?, ?)");
+		PreparedStatement preparedStatement = conn.prepareStatement("insert into room (room_name, building_id, capacity, property_string, reservation_status) values(?, ?, ?, ?, ?)");
 		preparedStatement.setString(1, room_name);
 		preparedStatement.setInt(2, building_id);
 		preparedStatement.setInt(3, capacity);
-		preparedStatement.setString(4, property_string);preparedStatement.executeUpdate();
+		preparedStatement.setString(4, property_string);
+		preparedStatement.setString(5, not_occupied); //When the room in created i set its reservation_status: Not Occupied. Status changes to "Occupied" when we reserve a room.
+		preparedStatement.executeUpdate();
 		System.out.println("Room " + room_name + " has been created succesfully.");
 		
 	}
