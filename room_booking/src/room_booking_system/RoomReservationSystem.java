@@ -262,6 +262,11 @@ public class RoomBookingSystem {
 				newBuilding.connections(conn, stmt);
 				newBuilding.creation();		
 			}
+			// Menu Option 0 
+			else if(choose == 0) {
+				adminMenu();
+				adminSelect();
+			}
 
 	}catch (Exception e) { // Handle exception will be add.
 			e.printStackTrace();
