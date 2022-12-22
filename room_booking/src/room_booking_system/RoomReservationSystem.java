@@ -165,6 +165,18 @@ public class RoomBookingSystem {
 
 	}
 	}
+	public static void adminMenu() {
+		System.out.println(menu);
+		System.out.println("1. " + one); //create
+		System.out.println("2. " + two);  //remove
+		System.out.println("3. " + six);  //room history
+		System.out.println("4. " + seven);  // user history
+		System.out.println("5. " + ten);  // create building
+		System.out.println(zero);   // menu show
+
+	}
+
+
 }
 
 
