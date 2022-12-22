@@ -37,4 +37,11 @@ public class RoomActions {
 //		this.conn = conn;
 		// TODO Auto-generated constructor stub
 	}
+	//Deletion COnstructor
+	public RoomActions(int room_id ) {
+		this.room_id = room_id;
+//		this.stmt = stmt;
+		// TODO Auto-generated constructor stub
+	}
+	
   }
