@@ -229,8 +229,8 @@ public class RoomBookingSystem {
 
 
 		}
-		// Menu Option 3
-		else if(choose == 3) {
+		        // Menu Option 3
+		        else if(choose == 3) {
 				System.out.println("3. Get Reservation History of a Room");
 				System.out.println("Enter room ID>: ");
 				room_id = input.nextInt();
@@ -238,7 +238,16 @@ public class RoomBookingSystem {
 				roomhist.connections(conn, stmt);
 				roomhist.rommhist();
 			}
+                        // Menu Option 4
+			else if(choose == 4) {
+				System.out.println("4. Get Reservation History of a User");
+				System.out.println("Enter User ID>: ");
+				user_id = input.nextInt();
+				UserActions userhist = new UserActions(user_id);
+				userhist.connections(conn, stmt);
+				userhist.userhist();
 
+			}
 
 	}catch (Exception e) { // Handle exception will be add.
 			e.printStackTrace();
