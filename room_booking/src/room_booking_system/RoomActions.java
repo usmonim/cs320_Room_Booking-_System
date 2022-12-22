@@ -13,5 +13,14 @@ public class RoomActions {
 	
 	String not_occupied = "Not occupied";
 	
-  
+  	Connection conn;
+	Statement stmt;
+
+	
+	
+	//Connections
+	public void connections(Connection conn, Statement stmt ) {
+		this.conn = conn;
+		this.stmt = stmt;
+	}
   }
