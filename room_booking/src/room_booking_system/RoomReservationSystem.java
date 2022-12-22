@@ -195,6 +195,31 @@ public class RoomBookingSystem {
 
 		try{
 
+			// Menu Option 1 we create room
+			if(choose == 1) {
+				System.out.println("1. Create Room");
+				input.nextLine();
+				System.out.println("Room Name >: ");
+				room_name = input.nextLine();
+
+				System.out.println("Building Location >: ");
+				building_id = input.nextInt();
+
+				System.out.println("Capacity >: ");
+				capacity = input.nextInt();
+
+				input.nextLine();
+
+				System.out.println("Property of  Room >:");
+				property_string  = input.nextLine();
+
+
+				RoomActions newRoom = new RoomActions(room_name, building_id, capacity, property_string);
+				newRoom.connections(conn, stmt);
+				newRoom.creation();
+			}
+
+
 		} catch (Exception e) { // Handle exception will be add.
 			e.printStackTrace();
 		}
