@@ -267,7 +267,15 @@ public class RoomBookingSystem {
 				adminMenu();
 				adminSelect();
 			}
-
+                       // >5 or <0
+			else {
+				System.out.println("Please choose Menu option from 0 to 5");
+				adminSelect();
+			}
+			
+			adminSelect(); //Looping menu so that after we successfully done something it continues working and we can choose other option
+			
+		}
 	}catch (Exception e) { // Handle exception will be add.
 			e.printStackTrace();
 		}
