@@ -175,8 +175,32 @@ public class RoomBookingSystem {
 		System.out.println(zero);   // menu show
 
 	}
+	//Select function where we select option from Menu
+	public static void adminSelect() throws Exception {
+		Connection conn = null;
+		Statement stmt = null;
+		conn = DriverManager.getConnection(DB_URL, USER, PASS);
+		stmt = conn.createStatement();
+		int room_id;
+		String room_name = "";
+		int building_id;
+		int capacity;
+		String property_string = "";
+		int user_id;
+//		String user_name;
+//		String reservation_status;
+//		String not_occupied = "Not occupied";
+		System.out.println("select >: ");
+		choose = input.nextInt();
+
+		try{
+
+		} catch (Exception e) { // Handle exception will be add.
+			e.printStackTrace();
+		}
 
 
+	}
 }
 
 
