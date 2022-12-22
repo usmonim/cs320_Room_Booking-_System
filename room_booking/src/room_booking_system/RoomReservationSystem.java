@@ -274,8 +274,31 @@ public class RoomBookingSystem {
 			}
 			
 			adminSelect(); //Looping menu so that after we successfully done something it continues working and we can choose other option
-			
 		}
+		
+		///HANDLING EXCEPTIONS. 		
+		catch(java.sql.SQLIntegrityConstraintViolationException ex) { //EXCEPTION if we try to create 2 identical rooms in one building. 
+			System.out.println("There can not 2 identical rooms or buildings with same name or ID in one Building or Table");
+			adminSelect();
+		}
+		finally{
+		       //finally block used to close resources
+		       try{
+		          if(stmt!=null)
+		             stmt.close();
+		       }
+		       catch(SQLException se2){
+		       }// nothing we can do
+		       try{
+		          if(conn!=null)
+		             conn.close();
+		       }
+		       catch(SQLException se){
+		          se.printStackTrace();
+		       }
+		}
+
+	}
 	}catch (Exception e) { // Handle exception will be add.
 			e.printStackTrace();
 		}
