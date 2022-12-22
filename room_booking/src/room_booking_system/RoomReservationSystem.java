@@ -248,6 +248,20 @@ public class RoomBookingSystem {
 				userhist.userhist();
 
 			}
+			else if(choose == 5) {
+				System.out.println("5. Create Building ");
+				input.nextLine();
+				System.out.println("Building Name >: ");
+				String building_name = input.nextLine();
+				
+				System.out.println("Building ID >: ");
+				building_id = input.nextInt();
+				
+				
+				BuildingActions newBuilding = new BuildingActions(building_id, building_name);
+				newBuilding.connections(conn, stmt);
+				newBuilding.creation();		
+			}
 
 	}catch (Exception e) { // Handle exception will be add.
 			e.printStackTrace();
