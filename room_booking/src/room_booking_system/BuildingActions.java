@@ -42,6 +42,16 @@ public class BuildingActions {
 
 	}
 	
+	public void creation() throws Exception {
+		
+		PreparedStatement preparedStatement = conn.prepareStatement("insert into building (id, building_name) values(?, ?)");
+		preparedStatement.setInt(1, building_id);
+		preparedStatement.setString(2, building_name);
+		preparedStatement.executeUpdate();
+		System.out.println("Building " + building_name + " has been created succesfully.");
+		
+	}
+	
 	
 	
 	
