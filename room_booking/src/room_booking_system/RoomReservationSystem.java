@@ -299,9 +299,35 @@ public class RoomBookingSystem {
 		}
 
 	}
-	}catch (Exception e) { // Handle exception will be add.
-			e.printStackTrace();
+
+	public static void main(String[] args) throws Exception {
+		if(userType == 1) {
+			userMenu();
+			userSelect();
 		}
+
+		else if (userType == 0) {
+			adminMenu();
+			adminSelect();
+
+
+		}
+	}
+
+	public static void main(String[] args) throws Exception {
+		if(userType == 1) {
+			userMenu();
+			userSelect();
+		}
+
+		else if (userType == 0) {
+			adminMenu();
+			adminSelect();
+
+
+		}
+	}
+
 }
 }
 
