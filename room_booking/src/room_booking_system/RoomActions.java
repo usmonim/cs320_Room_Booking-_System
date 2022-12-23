@@ -79,5 +79,29 @@ public class RoomActions {
 			
 		}
 	}
+
+
+	public void getoccupied() throws Exception {
+
+
+		String get_allstatuses = "select room.id, room_name, capacity from room where reservation_status = 'Occupied'";
+		ResultSet rs =  stmt.executeQuery(get_allstatuses);
+		if(!rs.isBeforeFirst()) {
+			System.out.println("Currently occupied rooms not found.");
+		}
+		else {
+			System.out.println("Currently occupied rooms: ");
+			while(rs.next()) {
+				int room_id = rs.getInt("id");
+				String room_name = rs.getString("room_name");
+				int capacity = rs.getInt("capacity");
+
+				System.out.print("Room ID: " + room_id);
+				System.out.print("|  Room Name: " +room_name);
+				System.out.println("|  Capacity: " + capacity);
+			}
+		}
+
+	}
 	
   }
