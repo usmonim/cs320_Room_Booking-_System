@@ -103,5 +103,12 @@ public class RoomActions {
 		}
 
 	}
+
+	public void search(String template) throws Exception {
+		String get_satusfyingRooms = "select id, room_name, building_id, capacity, reservation_status, property_string from room where property_string like '%" + template + "%';";
+		ResultSet rs =  stmt.executeQuery(get_satusfyingRooms);
+		if(!rs.isBeforeFirst()) {
+			System.out.println("Room with " + "<" + template + ">" + " was not found.");
+		}
 	
   }
