@@ -19,3 +19,14 @@ public class LoginPage implements ActionListener {
     private static JButton usr_button;
     public static JFrame frame;
 
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        JPanel panel = new JPanel();
+
+
+        frame = new JFrame();
+        frame.setSize(500, 200);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.add(panel);
+
+        panel.setLayout(null);
