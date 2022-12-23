@@ -314,20 +314,6 @@ public class RoomBookingSystem {
 		}
 	}
 
-	public static void main(String[] args) throws Exception {
-		if(userType == 1) {
-			userMenu();
-			userSelect();
-		}
-
-		else if (userType == 0) {
-			adminMenu();
-			adminSelect();
-
-
-		}
-	}
-
 }
 }
 
