@@ -1,4 +1,4 @@
-package RoomBookingSystem;
+package room_booking_system;
 
 import java.sql.*;
 import java.sql.*;
