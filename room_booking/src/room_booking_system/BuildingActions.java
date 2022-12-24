@@ -1,4 +1,4 @@
-package assignment1RoomReservation;
+	package RoomBookingSystem;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -75,11 +75,4 @@ public class BuildingActions {
 		
 	}
 	
-	
-	
-	
-
-	
-	
-
 }
