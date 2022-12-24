@@ -1,4 +1,4 @@
-package assignment1RoomReservation;
+package room_booking_system;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
