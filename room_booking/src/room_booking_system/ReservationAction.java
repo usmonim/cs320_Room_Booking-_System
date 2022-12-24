@@ -19,6 +19,7 @@ public class ReservationActions {
     Connection conn;
     Statement stmt;
 
+<<<<<<< HEAD
     public ReservationActions() { //Empty Constructer
         // TODO Auto-generated constructor stub
     }
@@ -45,3 +46,24 @@ public class ReservationActions {
     }
 
 
+=======
+    public ReservationActions() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public ReservationActions(int room_id) {
+		this.room_id = room_id;
+		// TODO Auto-generated constructor stub
+	}
+	
+	public ReservationActions(int room_id, int user_id) {
+		this.room_id = room_id;
+		this.user_id = user_id;
+	}
+
+	//Connections
+	public void connections(Connection conn, Statement stmt ) {
+			this.conn = conn;
+			this.stmt = stmt;
+	}
+>>>>>>> 27fbbdde7739e5f7a30737f04f9840e5d994226e
