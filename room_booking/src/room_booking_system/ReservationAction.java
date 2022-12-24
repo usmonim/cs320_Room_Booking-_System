@@ -71,6 +71,8 @@ public class ReservationActions {
 				preparedStatement02.setInt(2, room_id); preparedStatement02.executeUpdate();
 				System.out.println("Room: " + room_id + " has been reserved.");
 				 
+			} else {
+				System.out.println("You can not reserve room: " + room_id);
 			}
 		}
 		
