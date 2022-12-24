@@ -47,6 +47,13 @@ public class UserActions {
 			System.out.println("User " + user_id + " reservation history is empty.");
 		}
 		else {
+			while(rs.next()) {
+				 
+				 String user_name = rs.getString("user_name");
+				 String room_name = rs.getString("room_name"); 
+				 
+				 System.out.print("|  User Name: " + user_name);
+				 System.out.println("|  Room Name: " +room_name); 
 			
 				
 			}
