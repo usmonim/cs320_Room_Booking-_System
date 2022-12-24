@@ -39,6 +39,21 @@ public class UserActions {
 
 	}
 	
+	public void userhist() throws Exception {
+		
+		String getUser_hist = "select room_id, room_name, user_name from room, reserves, user where room.id = reserves.room_id and reserves.user_id = user.id and reserves.user_id = " + user_id + ";";
+		ResultSet rs =  stmt.executeQuery(getUser_hist);
+		if(!rs.isBeforeFirst()) {
+			System.out.println("User " + user_id + " reservation history is empty.");
+		}
+		else {
+			
+				
+			}
+		
+		
+		}
+	
 	
 
 	}
