@@ -41,6 +41,15 @@ public class ReservationActions {
 		if(!rs.isBeforeFirst()) {
 			System.out.println("Room " + room_id + " has never been reserved.");
 		}
+		else {
+		   while(rs.next()) {
+			String room_name = rs.getString("room_name"); 
+			String user_name = rs.getString("user_name");
+				
+			System.out.print("|  Room Name: " +room_name); 
+			System.out.println("|  User Name: " + user_name);
+			}
+		}
 	}
 	
 	
