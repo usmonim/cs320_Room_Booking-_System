@@ -66,4 +66,3 @@ public class ReservationActions {
 			this.conn = conn;
 			this.stmt = stmt;
 	}
->>>>>>> 27fbbdde7739e5f7a30737f04f9840e5d994226e
