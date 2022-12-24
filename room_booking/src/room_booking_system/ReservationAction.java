@@ -55,9 +55,9 @@ public class ReservationActions {
 	public void roomreserv() throws Exception {
 		
 		String get_status = "select reservation_status from room where id = " + room_id + ";";
-		String get_roomNameForcheck = "select room_name from room where id = " + room_id + ";";
+		//String get_roomNameForcheck = "select room_name from room where id = " + room_id + ";";
 		ResultSet rs =  stmt.executeQuery(get_status);
-		ResultSet rsRoom_name =  stmt.executeQuery(get_roomNameForcheck);
+		//ResultSet rsRoom_name =  stmt.executeQuery(get_roomNameForcheck);
 		
 	}
 	
