@@ -1,4 +1,4 @@
-package assignment1RoomReservation;
+package RoomBookingSystem;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

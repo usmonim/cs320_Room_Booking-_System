@@ -1,4 +1,4 @@
-package assignment1RoomReservation;
+package RoomBookingSystem;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -28,4 +28,16 @@ public class ReservationActions {
         this.room_id = room_id;
         this.user_id = user_id;
     }
+
+    //Connections
+    public void connections(Connection conn, Statement stmt ) {
+        this.conn = conn;
+        this.stmt = stmt;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("..............MMMMMMM..............");
+
+    }
+
 

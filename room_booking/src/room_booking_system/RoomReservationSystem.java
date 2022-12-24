@@ -1,4 +1,4 @@
-package assignment1RoomReservation;
+package RoomBookingSystem;
 
 import java.sql.*;
 import java.sql.*;
