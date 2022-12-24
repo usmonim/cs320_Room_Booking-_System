@@ -59,6 +59,16 @@ public class ReservationActions {
 		ResultSet rs =  stmt.executeQuery(get_status);
 		//ResultSet rsRoom_name =  stmt.executeQuery(get_roomNameForcheck);
 		
+		while(rs.next()) {
+			String reservation_status = rs.getString("reservation_status");
+			if(reservation_status.equals("Not occupied")) {
+				PreparedStatement preparedStatement01 = conn.prepareStatement("UPDATE room SET reservation_status = 'Occupied' WHERE id = ?;"); 
+				preparedStatement01.setInt(1, room_id);
+				preparedStatement01.executeUpdate();
+				 
+			}
+		}
+		
 	}
 	
 	
