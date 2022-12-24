@@ -14,5 +14,9 @@ public class ReservationActions {
 	Connection conn;
 	Statement stmt;
 	
+	public ReservationActions() {
+		//constructor added
+	}
+	
 	
 }
