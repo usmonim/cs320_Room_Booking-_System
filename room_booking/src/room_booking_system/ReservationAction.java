@@ -34,5 +34,14 @@ public class ReservationActions {
 
 	}
 	
+	public void rommhist() throws Exception {
+		
+		String getRoom_hist = "select room_id, room_name, user_name from room, reserves, user where room.id = reserves.room_id and reserves.user_id = user.id and reserves.room_id = " + room_id + ";";
+		ResultSet rs =  stmt.executeQuery(getRoom_hist);
+		if(!rs.isBeforeFirst()) {
+			System.out.println("Room " + room_id + " has never been reserved.");
+		}
+	}
+	
 	
 }
