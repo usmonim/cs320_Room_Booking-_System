@@ -1,4 +1,8 @@
-package RoomBookingSystem;
+<<<<<<< HEAD
+
+=======
+package room_booking_system;
+>>>>>>> 10613b07ffa4b6e15a1b1165ba1e906113d2a058
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
