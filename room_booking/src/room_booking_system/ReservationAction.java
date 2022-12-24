@@ -65,6 +65,11 @@ public class ReservationActions {
 				PreparedStatement preparedStatement01 = conn.prepareStatement("UPDATE room SET reservation_status = 'Occupied' WHERE id = ?;"); 
 				preparedStatement01.setInt(1, room_id);
 				preparedStatement01.executeUpdate();
+				
+				PreparedStatement preparedStatement02 = conn.prepareStatement("insert into reserves (user_id, room_id) values(?, ?)" );
+				preparedStatement02.setInt(1, user_id);
+				preparedStatement02.setInt(2, room_id); preparedStatement02.executeUpdate();
+				System.out.println("Room: " + room_id + " has been reserved.");
 				 
 			}
 		}
