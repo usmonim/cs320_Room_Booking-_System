@@ -1,5 +1,6 @@
 package room_booking_system;
 
+//java.sql package in the Java SE class library enables us to work with databases from SQL.
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
