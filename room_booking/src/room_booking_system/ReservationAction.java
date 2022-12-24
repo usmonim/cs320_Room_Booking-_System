@@ -78,5 +78,20 @@ public class ReservationActions {
 		
 	}
 	
+	public void leaveroom() throws Exception {
+		
+		String get_status = "select reservation_status from room where id = " + room_id + ";";
+		ResultSet rs =  stmt.executeQuery(get_status);
+		while(rs.next()) {
+			String reservation_status = rs.getString("reservation_status");
+			if(reservation_status.equals("Occupied")) {
+				PreparedStatement preparedStatement01 = conn.
+				prepareStatement("UPDATE room SET reservation_status = 'Not occupied' WHERE id = ?;"); 
+				preparedStatement01.setInt(1, room_id);
+				preparedStatement01.executeUpdate();
+				System.out.println("Room: " + room_id + " has been left.");
+			}
+	}
+	
 	
 }
