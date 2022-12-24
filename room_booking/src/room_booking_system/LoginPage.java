@@ -53,4 +53,26 @@ public class LoginPage implements ActionListener {
 
 
     }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if(e.getSource() == adm_button) {
+            String admintyped = admText.getText();
+            if(admintyped.equals(adminName)) {
+                RoomReservationSystem admin_entered = new RoomReservationSystem(0);
+                frame.dispose();
+                try {
+                    admin_entered.main(null);
+                } catch (Exception e1) {
+                    e1.printStackTrace();
+                }
+
+            }
+            else {
+                System.out.println("Incorrect Admin name!!!");
+            }
+
+        }
+
+
 }
