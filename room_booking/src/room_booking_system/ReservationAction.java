@@ -14,3 +14,18 @@ public class ReservationActions {
 
     Connection conn;
     Statement stmt;
+
+    public ReservationActions() { //Empty Constructer
+        // TODO Auto-generated constructor stub
+    }
+
+    public ReservationActions(int room_id) {
+        this.room_id = room_id;
+        // TODO Auto-generated constructor stub
+    }
+
+    public ReservationActions(int room_id, int user_id) {
+        this.room_id = room_id;
+        this.user_id = user_id;
+    }
+
