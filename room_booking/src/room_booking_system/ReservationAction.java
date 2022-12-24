@@ -29,4 +29,10 @@ public class ReservationActions {
 			this.stmt = stmt;
 	}
 	
+	public static void main(String[] args) {
+		System.out.println("..............MMMMMMM..............");
+
+	}
+	
+	
 }
