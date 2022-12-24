@@ -7,7 +7,8 @@ import java.sql.Statement;
 
 public class ReservationActions {
 
-	
+	int room_id;
+	int user_id;
 	
 	
 }
