@@ -1,4 +1,4 @@
-package assignment1RoomReservation;
+package RoomBookingSystem;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -39,6 +39,7 @@ public class UserActions {
 
 	}
 	
+	
 	public void userhist() throws Exception {
 		
 		String getUser_hist = "select room_id, room_name, user_name from room, reserves, user where room.id = reserves.room_id and reserves.user_id = user.id and reserves.user_id = " + user_id + ";";
@@ -54,15 +55,12 @@ public class UserActions {
 				 
 				 System.out.print("|  User Name: " + user_name);
 				 System.out.println("|  Room Name: " +room_name); 
-			
 				
 			}
 		
 		
 		}
-	
-	
-
 	}
 
 }
+
