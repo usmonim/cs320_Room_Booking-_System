@@ -51,14 +51,13 @@ public class LoginPage implements ActionListener {
         frame.setVisible(true);
 
 
-
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(e.getSource() == adm_button) {
+        if (e.getSource() == adm_button) {
             String admintyped = admText.getText();
-            if(admintyped.equals(adminName)) {
+            if (admintyped.equals(adminName)) {
                 RoomReservationSystem admin_entered = new RoomReservationSystem(0);
                 frame.dispose();
                 try {
@@ -67,12 +66,22 @@ public class LoginPage implements ActionListener {
                     e1.printStackTrace();
                 }
 
-            }
-            else {
+            } else {
                 System.out.println("Incorrect Admin name!!!");
             }
 
+        } else if (e.getSource() == usr_button) {
+            frame.dispose();
+            RoomReservationSystem user_entered = new RoomReservationSystem(1);
+            String[] arguments = new String[]{"123"};
+            frame.dispose();
+            try {
+                user_entered.main(null);
+            } catch (Exception e1) {
+                e1.printStackTrace();
+            }
         }
 
 
+    }
 }
