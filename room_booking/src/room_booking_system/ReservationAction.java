@@ -90,6 +90,8 @@ public class ReservationActions {
 				preparedStatement01.setInt(1, room_id);
 				preparedStatement01.executeUpdate();
 				System.out.println("Room: " + room_id + " has been left.");
+			}else {
+				System.out.println("You can not leave unreserved room: " + room_id + ".");
 			}
 	}
 	
