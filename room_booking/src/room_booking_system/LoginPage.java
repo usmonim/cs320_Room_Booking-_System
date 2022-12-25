@@ -36,5 +36,9 @@ public class LoginPage implements ActionListener {
 		label = new JLabel("prof_name");
 		label.setBounds(10, 20, 80, 25);
 		panel.add(label);
+		
+		admText = new JTextField(20);
+		admText.setBounds(100, 20, 165, 25);
+		panel.add(admText);
   }
 }
