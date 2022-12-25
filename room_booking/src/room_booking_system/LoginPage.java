@@ -66,7 +66,9 @@ public class LoginPage implements ActionListener {
 				}
 				
 			}
-			
+			else {
+				System.out.println("Incorrect Admin name!!!");
+			}
 			
 		}
 		
