@@ -70,7 +70,17 @@ public class LoginPage implements ActionListener {
 			
 		}
 		
-		
+		else if(e.getSource() == usr_button) {
+			frame.dispose();
+			RoomReservationSystem user_entered = new RoomReservationSystem(1);
+	        String[] arguments = new String[] {"123"};
+	        frame.dispose();
+			try {
+				user_entered.main(null);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+		}
 		
 		
 	}
