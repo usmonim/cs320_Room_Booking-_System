@@ -45,5 +45,11 @@ public class LoginPage implements ActionListener {
 		adm_button.setBounds(10, 80, 130, 25);
 		adm_button.addActionListener(new LoginPage());
 		panel.add(adm_button);
+	  
+	  	usr_button = new JButton("User Direct Login");
+		usr_button.setBounds(10, 120, 150, 25);
+		usr_button.addActionListener(new LoginPage());
+		panel.add(usr_button);
+		frame.setVisible(true);
   }
 }
