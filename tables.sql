@@ -25,7 +25,7 @@ create table room (
     property_string		varchar(30) 	not null, 
     reservation_status	        varchar(30) 	not null,
     primary key(room_name, building_id ),
-    foreign key (building_id) references building(id)
+    
 );
 
 create table user (
