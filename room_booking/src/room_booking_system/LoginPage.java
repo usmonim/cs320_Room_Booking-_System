@@ -52,4 +52,26 @@ public class LoginPage implements ActionListener {
 		panel.add(usr_button);
 		frame.setVisible(true);
   }
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource() == adm_button) {
+			String admintyped = admText.getText();
+			if(admintyped.equals(profEmail) || admintyped.equals(profEmail2) || admintyped.equals(profEmail3) || admintyped.equals(profEmail4) ) {
+				RoomReservationSystem admin_entered = new RoomReservationSystem(0);
+				frame.dispose();	
+				try {
+					admin_entered.main(null);
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+				
+			}
+			
+			
+		}
+		
+		
+		
+		
+	}
 }
