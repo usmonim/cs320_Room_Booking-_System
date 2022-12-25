@@ -40,5 +40,10 @@ public class LoginPage implements ActionListener {
 		admText = new JTextField(20);
 		admText.setBounds(100, 20, 165, 25);
 		panel.add(admText);
+	  
+	  	adm_button = new JButton("Prof Login");
+		adm_button.setBounds(10, 80, 130, 25);
+		adm_button.addActionListener(new LoginPage());
+		panel.add(adm_button);
   }
 }
