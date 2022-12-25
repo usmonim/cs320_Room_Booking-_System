@@ -30,5 +30,11 @@ public class LoginPage implements ActionListener {
 		frame.setSize(500, 200);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.add(panel);
+		
+		panel.setLayout(null);
+		
+		label = new JLabel("prof_name");
+		label.setBounds(10, 20, 80, 25);
+		panel.add(label);
   }
 }
