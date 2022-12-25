@@ -10,6 +10,11 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class LoginPage implements ActionListener {
+	
+        private static String profEmail = "hasan@ozu.edu.tr";
+	private static String profEmail2 = "reyhan@ozu.edu.tr";
+	private static String profEmail3 = "furkan@ozu.edu.tr";
+	private static String profEmail4 = "ismail@ozu.edu.tr";
   
   private static JLabel label;
 	private static JTextField admText;
